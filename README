@@ -1,0 +1,7 @@
+This docker will excute spring-boot-sample apllication
+
+To build the docker execute form the Dockerfile directory:
+docker build -t springbootsample .
+
+To run the this docker:
+docker run --name springbootsample -p 8080:8080 -d springbootsample
