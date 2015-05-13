@@ -1,11 +1,12 @@
+# Install java8
 FROM dashaun/centos6java8
 
-MAINTAINER Srikanth Jupally <srikanth.jupaly825@gmail.com>
+MAINTAINER Srikanth Jupally <srikanth.jupally@valuelabs.com>
 
 RUN mkdir /usr/local/srikanth
 RUN mkdir /var/log/srikanth
 
-# copy over jar (this is injected by go-cd from an upstream pipeline as an artifact into 'pkg' directory)
+# copy over jar (this is injected by go-cd or jenkins from an upstream pipeline as an artifact into 'pkg' directory)
 ADD pkg /usr/local/srikanth/
 
 # expose port
